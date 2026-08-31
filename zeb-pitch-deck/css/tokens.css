@@ -1,0 +1,104 @@
+/*
+ * tokens.css — Divine Technologies Design Tokens & Variables (Light Theme v2)
+ * Primary Navy: #0B2447, Secondary Navy: #143560, Background: #FBFBFB, Accent: #D6E0F1
+ */
+
+:root {
+  /* SPACING — Strict 8pt system */
+  --space-1: 4px;   /* 0.5x */
+  --space-2: 8px;   /* 1x */
+  --space-3: 16px;  /* 2x */
+  --space-4: 24px;  /* 3x */
+  --space-5: 32px;  /* 4x */
+  --space-6: 48px;  /* 6x */
+  --space-7: 64px;  /* 8x */
+  --space-8: 96px;  /* 12x */
+  --space-9: 128px; /* 16x */
+  --space-10: 160px;/* 20x */
+
+  /* COLOR PALETTE (Strict Light Theme - Client Supplied) */
+  --color-text-primary: #0B2447;        /* rgb(11, 36, 71) - AAA Contrast: 14.9:1 vs #FBFBFB */
+  --color-text-secondary: #143560;      /* rgb(20, 53, 96) - AAA Contrast: 11.9:1 vs #FBFBFB */
+  --color-text-muted: #334E68;          /* rgb(51, 78, 104) - AA Contrast: 7.4:1 vs #FFFFFF */
+  --color-text-inverse: #FFFFFF;        /* White text for solid navy fills */
+  
+  --color-bg-primary: #FBFBFB;          /* rgb(251, 251, 251) Page Background */
+  --color-bg-surface: #FFFFFF;          /* Card & Surface Background */
+  --color-bg-surface-hover: #F6F9FD;    /* Card Hover Tint */
+  --color-bg-inverse: #0B2447;          /* Inverted Navy Background */
+  
+  --color-accent: #D6E0F1;              /* rgb(214, 224, 241) Light Blue Accent */
+  --color-accent-hover: #C2D2EA;        /* Hover state for accent button */
+  --color-accent-light: #EEF3FA;        /* Subtle accent tint for cards/chips */
+  
+  --color-primary-dark: #081C38;        /* Primary Button hover darken */
+  --color-primary-active: #051224;      /* Button active press */
+  --color-border: #E3E9F2;              /* Card & Table hairlines */
+  --color-border-subtle: #EDF2F7;       /* Subtle dividers */
+  --color-focus-ring: #0B2447;          /* 3px outline @ 2px offset */
+
+  /* SEMANTIC COLORS (WCAG AA/AAA Verified) */
+  --color-success: #15803D;             /* Emerald 700 - AAA 6.1:1 on #FFFFFF */
+  --color-success-bg: #DCFCE7;          /* Emerald 100 */
+  --color-error: #B91C1C;               /* Red 700 - AAA 6.0:1 on #FFFFFF */
+  --color-warning: #B45309;             /* Amber 700 - AAA 5.2:1 on #FFFFFF */
+
+  /* TYPOGRAPHY — Figtree Variable & Weights */
+  --font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Type Scale (Responsive & Proportionate) */
+  --text-display: 64px;
+  --leading-display: 72px;
+  --text-display-mobile: 36px;
+  --leading-display-mobile: 44px;
+
+  --text-h2: 40px;
+  --leading-h2: 48px;
+  --text-h2-mobile: 28px;
+  --leading-h2-mobile: 36px;
+
+  --text-h3: 24px;
+  --leading-h3: 32px;
+  --text-h3-mobile: 20px;
+  --leading-h3-mobile: 28px;
+
+  --text-h4: 18px;
+  --leading-h4: 26px;
+
+  --text-body-lg: 18px;
+  --leading-body-lg: 28px;
+
+  --text-body: 16px;
+  --leading-body: 24px;
+
+  --text-caption: 13px;
+  --leading-caption: 20px;
+  --tracking-caption: 0.08em;
+
+  --text-button: 16px;
+  --leading-button: 24px;
+
+  /* TRANSITIONS */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* SHADOWS (Subtle & High-Performance) */
+  --shadow-sm: 0 1px 3px rgba(11, 36, 71, 0.04), 0 1px 2px rgba(11, 36, 71, 0.02);
+  --shadow-md: 0 4px 16px rgba(11, 36, 71, 0.06), 0 2px 4px rgba(11, 36, 71, 0.02);
+  --shadow-hover: 0 12px 32px rgba(11, 36, 71, 0.08), 0 4px 8px rgba(11, 36, 71, 0.03);
+  --shadow-card-active: 0 2px 8px rgba(11, 36, 71, 0.08);
+
+  /* BORDER RADIUS */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+}

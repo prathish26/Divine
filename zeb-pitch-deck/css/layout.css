@@ -1,0 +1,183 @@
+/*
+ * layout.css — Grid system, section rhythm, and responsive layout utilities
+ */
+
+/* Main Container — max 1280px with responsive inline padding */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--space-4); /* 24px */
+}
+
+.container--narrow {
+  max-width: 960px;
+}
+
+.container--hero {
+  max-width: 1080px;
+}
+
+/* Section vertical rhythm */
+.section {
+  padding-block: var(--space-8); /* 96px */
+  position: relative;
+}
+
+/* Expanded rhythm for sections where buffer is needed */
+.section--spacious {
+  padding-block: var(--space-9); /* 128px */
+}
+
+/* Grid utilities */
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.grid-4up {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: stretch;
+  width: 100%;
+}
+
+.grid-2up {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Full bleed utility */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Responsive Breakpoints */
+/* Tablet Landscape & Desktop: 1024px+ */
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: var(--space-5); /* 32px */
+  }
+}
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+  .container {
+    padding-inline: var(--space-4); /* 24px */
+  }
+  .section {
+    padding-block: var(--space-7); /* 64px */
+  }
+  .section--spacious {
+    padding-block: var(--space-8); /* 96px */
+  }
+  .grid-4up {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+}
+
+/* Mobile: 320px - 767px */
+@media (max-width: 767px) {
+  .container {
+    padding-inline: var(--space-3); /* 16px */
+  }
+  .section {
+    padding-block: var(--space-6); /* 48px */
+  }
+  .section--spacious {
+    padding-block: var(--space-7); /* 64px */
+  }
+  .grid-4up,
+  .grid-2up {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+}
+
+/* Typography Classes */
+.text-display {
+  font-size: var(--text-display);
+  line-height: var(--leading-display);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+}
+
+.text-h2 {
+  font-size: var(--text-h2);
+  line-height: var(--leading-h2);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.text-h3 {
+  font-size: var(--text-h3);
+  line-height: var(--leading-h3);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 767px) {
+  .text-display {
+    font-size: var(--text-display-mobile);
+    line-height: var(--leading-display-mobile);
+  }
+  
+  .text-h2 {
+    font-size: var(--text-h2-mobile);
+    line-height: var(--leading-h2-mobile);
+  }
+
+  .text-h3 {
+    font-size: var(--text-h3-mobile);
+    line-height: var(--leading-h3-mobile);
+  }
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-body-lg);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-body {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-caption {
+  font-size: var(--text-caption);
+  line-height: var(--leading-caption);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caption);
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-center {
+  text-align: center;
+}
